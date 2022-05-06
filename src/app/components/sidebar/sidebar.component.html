@@ -1,0 +1,21 @@
+<div class="flex bg-slate-200 w-1/6 px-6 h-full pt-2">
+  <ul>
+    <div class="my-6 flex flex-row" *ngFor="let option of Options">
+      <li>
+        {{ option.Title }}
+      </li>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 mx-1"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <svg:g>
+          <svg:path [attr.d]="option.Icon"></svg:path>
+        </svg:g>
+      </svg>
+    </div>
+  </ul>
+</div>
